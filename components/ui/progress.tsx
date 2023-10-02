@@ -2,13 +2,33 @@
 
 import * as React from 'react';
 import * as ProgressPrimitive from '@radix-ui/react-progress';
+import { cva, type VariantProps } from 'class-variance-authority';
 
 import { cn } from '@/lib/utils';
 
+const progressVariants = cva('h-full w-full flex-1 bg-primary transition-all', {
+  variants: {
+    variant: {
+      default: 'bg-sky-600',
+      success: 'bg-emerald-700',
+    },
+  },
+  defaultVariants: {
+    variant: 'default',
+  },
+});
+
+export interface ProgressProps
+  extends React.HTMLAttributes<HTMLDivElement>,
+    VariantProps<typeof progressVariants> {}
+
+type CombinedProgressProps = ProgressProps &
+  React.ComponentPropsWithoutRef<typeof ProgressPrimitive.Root>;
+
 const Progress = React.forwardRef<
   React.ElementRef<typeof ProgressPrimitive.Root>,
-  React.ComponentPropsWithoutRef<typeof ProgressPrimitive.Root>
->(({ className, value, ...props }, ref) => (
+  CombinedProgressProps
+>(({ className, value, variant, ...props }, ref) => (
   <ProgressPrimitive.Root
     ref={ref}
     className={cn(
@@ -18,7 +38,7 @@ const Progress = React.forwardRef<
     {...props}
   >
     <ProgressPrimitive.Indicator
-      className="h-full w-full flex-1  bg-purple-700  transition-all"
+      className={cn(progressVariants({ variant }))}
       style={{ transform: `translateX(-${100 - (value || 0)}%)` }}
     />
   </ProgressPrimitive.Root>

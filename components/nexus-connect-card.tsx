@@ -11,9 +11,9 @@ import {
 
 const NexusConnectCard = () => {
   return (
-    <Card className=" p-0 bg-[url('/bg-card-front.png')] bg-cover bg-center bg-no-repeat  ">
+    <Card className=" p-0  bg-slate-200 ">
       <CardHeader className="pb-0">
-        <h1 className=" text-lg font-semibold  mb-2">Try Our Chat App!</h1>
+        <h1 className=" text-md font-semibold  mb-2">Try Chat App</h1>
       </CardHeader>
       <CardContent className=" text-center ">
         <a href="https://nexusconnect.up.railway.app" target="_blank">

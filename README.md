@@ -1,36 +1,42 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# AcademaX - Learning Management System(LMS) 
 
-First, run the development server:
+This Learning Management System (LMS) is a powerful web application built with Next.js13, TypeScript, Tailwind CSS, Prisma, Mux, Stripe, Clerk, and MySQL using Planetscale. It offers a comprehensive set of features for both students and teachers to manage and access courses, track progress, and facilitate online learning.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Demo
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Link Link - https://academax.vercel.app
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+## Features
 
-To learn more about Next.js, take a look at the following resources:
+### **For Teachers**
+- **Teacher Mode:** Switch to teacher mode to create and manage courses.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Create New Courses:** Easily create new courses with titles, descriptions, and thumbnails.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- **Create New Chapters:** Add chapters to your courses, complete with rich text descriptions and video content.
 
-## Deploy on Vercel
+- **Reorder Chapters with Drag n' Drop:** Intuitively rearrange chapter positions with a simple drag-and-drop interface.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Upload Thumbnails, Attachments, and Videos:** Use UploadThing for easy multimedia uploads, including video content.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- **Video Processing with Mux:** Leverage Mux for video processing and HLS video playback.
+
+- **Rich Text Editor:** Create engaging chapter descriptions using a rich text editor.
+
+### **For Students**
+- **Browse & Filter Courses:** Easily search for courses and apply filters to find the right ones for you.
+
+- **Purchase Courses using Stripe:** Seamlessly buy courses with Stripe integration for secure payments.
+
+- **Mark Chapters as Completed:** Keep track of your progress by marking completed chapters within each course.
+
+- **Progress Calculation:** Get real-time progress updates on each course to see how much you've completed.
+
+- **Student Dashboard:** Access your personalized dashboard with a list of enrolled courses and progress indicators.
+
+
+
+

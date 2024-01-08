@@ -8,6 +8,7 @@ This Learning Management System (LMS) is a powerful web application built with N
 
 Link Link - https://academax.vercel.app
 
+Demo Video - https://www.youtube.com/watch?v=hw-bVyXC6gA&t=3s
 
 ## Features
 
